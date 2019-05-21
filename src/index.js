@@ -1,6 +1,11 @@
 const express = require("express");
 const app = express();
 
+app.get("/", (req, res) => {
+  res.send("problema_lectoescritura");
+});
+
+
 app.get("/funcionarios", (req, res) => {
   let funcionarios = [
     { idfuncionario:"", nombrefuncionario1: "", nombrefuncionario2: "", apellidofuncionario1: "",
